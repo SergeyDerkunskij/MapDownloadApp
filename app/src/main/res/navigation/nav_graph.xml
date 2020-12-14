@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mapdownloadapp.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_regionsFragment"
+            app:destination="@id/regionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regionsFragment"
+        android:name="com.example.mapdownloadapp.RegionsFragment"
+        android:label="RegionsFragment"
+        tools:layout="@layout/fragment_regions">
+        <action
+            android:id="@+id/action_regionsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="regionList"
+            app:argType="com.example.xmlparseapplication.data.Region[]" />
+    </fragment>
+</navigation>

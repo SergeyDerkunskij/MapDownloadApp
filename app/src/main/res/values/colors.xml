@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff8800</color>
+    <color name="colorPrimaryDark">#e68200</color>
+    <color name="colorAccent">#ff8800</color>
+    <color name="colorMapIcon">#727272</color>
+    <color name="colorAppBar">#ff8800</color>
+    <color name="colorStatusBar">#e68200</color>
+    <color name="colorActivityBack">#eaeaea</color>
+    <color name="colorText">#212121</color>
+</resources>
