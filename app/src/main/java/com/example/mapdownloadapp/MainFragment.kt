@@ -66,6 +66,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             adapter = MyCountryRecyclerViewAdapter(continent.countryList) { position ->
                 onCountryClick(position)}
         }
+
+        memory_size_text.text = "Free " + android.text.format.Formatter.formatShortFileSize(requireContext(), requireContext().filesDir.usableSpace )
     }
 
 
